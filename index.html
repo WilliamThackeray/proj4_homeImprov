@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
+    <header><h1>Paint and Flooring Calculator</h1></header>
+    <main>
+        <div class="data">
+            <label>Room Width <input type="number" id="width"> feet</label>
+            <label>Room Depth <input type="number" id="depth"> feet</label>
+            <label>Room Height <input type="number" id="height"> feet</label>
+            Paint Quality <select id="quality">
+                <option value="" disabled selected>Select Quality</option>
+                <option value="600">Premium</option>
+                <option value="500">Standard</option>
+                <option value="400">Economy</option>
+            </select>
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <section>
+            <div>
+                <h2>Paint Supplies</h2>
+                <ul id="paint"></ul>
+            </div>
+            <div>
+                <h2>Carpet Supplies</h2>
+                <ul id="carpet"></ul>
+            </div>
+        </section>
+    </main>
+    <footer><p>&copy; William Thackeray &bull; Project 4</p></footer>
     <script src="js/scripts.js"></script>
   </body>
 </html>
